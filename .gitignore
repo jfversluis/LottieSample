@@ -40,3 +40,5 @@ Thumbs.db
 *.dotCover
 
 .droidres/.lottiesample.droidres.db
+/.vs
+*_TemporaryKey.pfx
