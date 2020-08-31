@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" x:Class="LottieSample.MainPage">
+    <StackLayout >
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Margin="0,20,0,0" Text="Lottie Animations" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+        <StackLayout>
+            <lottie:AnimationView x:Name="lottie" Animation="work.json" AutoPlay="True" Loop="True" WidthRequest="300" HeightRequest="300" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="PlayButton" Text="Play" Clicked="HandlePlay_Clicked" />
+                <Button x:Name="PauseButton" Text="Pause" Clicked="HandlePause_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
